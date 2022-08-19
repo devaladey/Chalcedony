@@ -151,7 +151,9 @@ input, label, span, button, textarea {
 }
 
 .navbar-toggler {
-    background-color: #333;
+    width: 30px;
+    height: 30px;
+    /* background-color: #333; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +169,10 @@ input, label, span, button, textarea {
     position: relative;
 }
 
+.navbar-toggler.active .navbar-toggleline {
+    background-color: transparent;
+}
+
 .navbar-toggleline::after,
 .navbar-toggleline::before {
     display: inline-block;
@@ -177,13 +183,28 @@ input, label, span, button, textarea {
     position: absolute;
     top: 0;
     left: 0;
+    transform-origin: center;
+    transition: all .3s;
 }
 
 .navbar-toggleline::after {
     top: -10px;
 }
+
+
+
 .navbar-toggleline::before {
     top: 10px;
+}
+
+.navbar-toggler.active .navbar-toggleline::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler.active .navbar-toggleline::before {
+    top: 0;
+    transform: rotate(-45deg);
 }
 
 /* Navigation Bar Styles Ends */
@@ -408,6 +429,7 @@ input, label, span, button, textarea {
 .faq-content {
     margin-top: 20px;
     /* background-color: blue; */
+    display: none;
 }
 /* Faq Styles Ends */
 

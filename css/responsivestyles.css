@@ -26,8 +26,8 @@
     }
 
     .header {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         height: auto;
     }
 
@@ -215,7 +215,22 @@
         position: relative;
     }
 
+
+    .header {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     /* About Page Styles Begins */
+
+    .testifier-para {
+        margin-top: 30px;
+        margin-top: 3vw;
+    }
+
+    .testifier-bottom {
+        margin-top: 20px;
+    }
 
 }
 
